@@ -2,6 +2,6 @@
 Učni projekt pri UVP
 
 ##Znani slovenski matematiki
-Jurij Vega
+Jurij Vegajdglaioeuhfagrlihalhelawuoeuwaohgjhgawjačwiečiwgroigaoirh
 Ivan Vidav
 Žiga Knap
