@@ -1,7 +1,4 @@
 # vislice
 Učni projekt pri UVP
 
-##Znani slovenski matematiki
-Jurij Vegajdglaioeuhfagrlihalhelawuoeuwaohgjhgawjačwiečiwgroigaoirh
-Ivan Vidav
-Žiga Knap
+Vislice so ena izmed poučnih iger tako za otroke kot tudi za otrasle, s katero ugotavljamo različne besede.
