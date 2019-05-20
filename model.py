@@ -42,19 +42,18 @@ class Igra:
         niz = ''
         for crka in self.geslo:
             if crka in self.crke:
-                niz += crka = ''
-        else:
-            niz += '_'
-            return niz
+                niz += crka + ' '
+            else:
+                niz += '_ '
+        return niz
 
 
     def nepravilni_ugibi(self):
         niz = ''
-        for crka not in self.geslo:
-            if crka in self.crke:
-                crka = ' '
-        else:  
-            return niz
+        for crka not in self.crke:
+            if crka in self.geslo:
+                niz += crka + ' '  
+        return niz
 
     def ugibaj(self):
         if crka in self.geslo:
@@ -70,3 +69,25 @@ class Igra:
          
 
    
+Zacetek = '%'
+
+class Vislice:
+    def __init__(self):
+        self.igre = {}
+
+    def prost_id_igre(self):
+        if len(self.igre) == 0:
+            return 0
+        else:
+            return max(self.igre.keys()) + 1
+
+    def nova_igra(self):
+        id = self.prost_id_igre()
+        igra = nova_igra()
+        self.igre[id] = (igra, Zacetek)
+        return id
+    
+    def ugibaj(self, id, crka):
+        igra = self.igre[id][0] #ali igra, _ = self.igre[id]
+        stanje = igra.ugibaj(crka)
+        self.igre[id] = (igra, stanje)
